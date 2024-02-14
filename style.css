@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: colorChange 5s infinite alternate; /* Change color every 5 seconds */
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #f2f2f2; /* Initial background color */
+  }
+  50% {
+    background-color: #b0e0e6; /* Transition color */
+  }
+  100% {
+    background-color: #f2f2f2; /* Back to initial color */
+  }
+}
+
+.pokedex-header {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokecard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokecard img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.pokecard h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.pokecard p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #4e4e4e;
+}
